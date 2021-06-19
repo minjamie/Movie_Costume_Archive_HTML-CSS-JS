@@ -1,0 +1,39 @@
+.contentsInSection:nth-child(1) {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 270px auto;
+}
+
+#menuNo1_header {
+  background-color: rgb(127, 170, 209);
+  /* 헤더 영역의 색상 */
+}
+.headerUpper {
+}
+.headerButton {
+  padding: 0 30px;
+  /* 헤더 하단 부분에 양 옆의 공간과 아래 공간을 30px씩 들여보낸다. */
+}
+.logoImage {
+  /* 헤더 영역 상단 로고 이미지 */
+  display: block; /* 로고 이미지를 가운데 정렬 시킨다. */
+  margin: auto;
+  width: 340px;
+}
+.snsImage {
+  /* 헤어 영역 하단 sns영역 */
+  width: 20px; /* snsIcon이미지 사이즈 */
+  margin-left: 10px; /* 아이콘 간의 공간을 조정한다 */
+  float: left; /* snsIcon을 헤더 하단 왼쪽으로 붙여준다. */
+}
+
+.searchIcon,
+.loginIcon {
+  /* 헤어 영역 하단 검색, 로그인 영역 */
+  width: 20px; /* search와 loginIcon 사이즈 */
+  vertical-align: middle; /* 이미지를 텍스트 중간에 위치시킨다. */
+}
+.SearchLoginIcon {
+  float: right; /* search와 login아이콘을 헤더 하단 오른쪽으로 붙여준다. */
+  margin-left: 10px; /* 아이콘 간의 공간을 조정한다 */
+}

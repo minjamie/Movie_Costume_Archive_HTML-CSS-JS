@@ -1,0 +1,46 @@
+.menuNo2Header {
+  height: 60px;
+  border-bottom: 1px solid slategray;
+  /* 헤더 영역의 색상 */
+}
+.aside_menu_type_kinds_name {
+  padding: 1rem 1rem;
+}
+#menu2_serach_form {
+  float: left;
+}
+#searchSubmit {
+  background-image: url("/img/header/search\ icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  white-space: pre;
+  width: 30px;
+  height: 30px;
+}
+
+#menu2_cart_button {
+  float: right;
+}
+#menuCart {
+  vertical-align: middle;
+}
+
+#menuCartIcon {
+  width: 25px;
+  height: 25px;
+}
+#menuCartText {
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.menuNo2Logo {
+  height: 240px;
+  position: relative;
+}
+#menuLogoIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 295px;
+  height: auto;
+}

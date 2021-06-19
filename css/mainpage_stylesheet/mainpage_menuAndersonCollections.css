@@ -1,0 +1,32 @@
+.Top {
+  /* 메뉴 5번, 엔더슨 콜렉션 타이틀이 나오는 영역이다 */
+  text-align: center;
+  padding: 1rem;
+}
+.AndersonCollections:nth-child(2) {
+  /* 메뉴 5번, 앤더슨 콜렉션 사진 4개가 타이틀 밑에 같은 크기로 고정되어 있다. */
+  display: flex;
+  flex-flow: column nowrap;
+}
+.ImageUpper,
+.ImageBottom {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1;
+  padding-bottom: 1rem;
+  justify-content: space-evenly;
+}
+.collectionsImage {
+  width: 15vw;
+  height: auto;
+}
+.Bottom {
+  /* 메뉴 5번, 앤더슨 콜렉션 사진 나머지 4개가 같은 크기로 고정되어 있다. */
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* 메뉴 5개 관련 css */
+
+.upScale {
+  border: 1px solid red;
+}

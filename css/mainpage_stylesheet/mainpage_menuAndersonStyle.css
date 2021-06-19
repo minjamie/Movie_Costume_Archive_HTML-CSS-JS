@@ -1,0 +1,98 @@
+.menuNo1AndersonStyle:nth-child(2) {
+  /* 메뉴1번 해당되는 앤더슨 스타일 콘텐츠 부분 */
+  display: flex;
+  flex-flow: column nowrap;
+}
+.andersonStyle {
+  /* flex-basis: 0; */
+}
+.andersonStyle:nth-child(1) {
+  flex: 1;
+  text-align: center;
+}
+.andersonStyleVideo {
+  width: 50vw;
+  height: auto;
+}
+.andersonStyle:nth-child(2) {
+  flex: 220px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.AndersonStyleSlider {
+  /* ul */
+  position: absolute;
+  width: 100%;
+}
+.AndersonStyleSlide {
+  position: absolute;
+  width: 100%;
+  padding: 0 10%;
+
+  /* 양옆에 패딩을주고  */
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+.andersonStyleTitle {
+  /* 메인 1번 영역의 텍스트 영역 */
+  color: rgb(255, 233, 95);
+  font-size: 3rem;
+  font-weight: bold;
+}
+.andersonStyleDetailText {
+  /* 메인 1번 영역의 텍스트 부연설명 영역 */
+  color: rgb(186, 220, 239);
+  background-color: #f8b7d3;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* 기본 설정 */
+
+.AndersonStyleSlider.animated {
+  -webkit-transition: left 1s ease-in;
+  transition: left 1s ease-in;
+}
+
+/* Nav */
+#AndersonStylePrev,
+#AndersonStyleNext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  z-index: 8;
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+#AndersonStylePrev.disabled,
+#AndersonStyleNext.disabled {
+  display: none;
+}
+
+#AndersonStylePrev {
+  background-image: url("/img/main/main_menu1/arrow-left-out.svg");
+  margin-left: -680px;
+}
+
+#AndersonStylePrev:hover {
+  background-image: url("/img/main/main_menu1/arrow-left-over.svg");
+}
+
+#AndersonStyleNext {
+  margin-left: 580px;
+  background-image: url("/img/main/main_menu1/arrow-right-out.svg");
+}
+
+#AndersonStyleNext:hover {
+  background-image: url("/img/main/main_menu1/arrow-right-over.svg");
+}

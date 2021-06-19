@@ -1,0 +1,88 @@
+.leftZoon:nth-child(1) {
+  /* 'NAV에 있는 메뉴2번'(앤더슨 샵)에서 홍보하는 아가사 캐릭터 관련 아이템이 나오는 영역이다 */
+  background-image: url("/img/main/main_menu2/main_menu2_2_char_item.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.middleZoon:nth-child(2) {
+  /* 'NAV에 있는 메뉴2번'(앤더슨 샵)에서 홍보하는 캐릭터 사진 2개와 해당 이미지를 설명하는 문구 보여주는 영역이다 */
+  display: grid;
+  grid-template-rows: 0.8fr 1fr;
+}
+
+.middleZoonUpper:nth-child(1) {
+  /* 'NAV에 있는 메뉴2번'(앤더슨 샵)에서 홍보하는 캐릭터 사진 2개가 나오는 영역*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.middleZoonUpperLeft:nth-child(1) {
+  /* 'NAV에 있는 메뉴2번'(앤더슨 샵)에서 홍보하는 아가사 사진이 포함된 영역*/
+  background-image: url("/img/main/main_menu2/main_menu2_2_char_style.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.middleZoonUpperRight:nth-child(2) {
+  /* 'NAV에 있는 메뉴2번'(앤더슨 샵)에서 홍보하는 마고 사진이 포함된 영역*/
+  background-image: url("/img/main/main_menu2/main_menu2_aderson_style1.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.middleZoonBottom:nth-child(2) {
+  background-color: #b1b1b1;
+  /* 'NAV에 있는 메뉴2번'(앤더슨 샵)에서 홍보하는  나오는 영역*/
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+.middleZoonBottomTop {
+  flex: auto;
+  background-image: url("/img/main/main_menu2/wes-anderson_invitation.gif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+}
+.middleZoonBottomDown {
+  flex: 0.2;
+  background-image: url("/img/main/main_menu2/accept.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+.MarkText1 {
+  background-color: #f4f2e4;
+  color: #381b51;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.MarkText2 {
+  color: #381b51;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.DetailLeft {
+  float: left;
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+}
+.DetailRight {
+  float: right;
+  padding-right: 4.5rem;
+  padding-top: 0.5rem;
+}
+#andersonShopInviteAcceptButton {
+  width: 10vw;
+}
+
+.RightZoon:nth-child(3) {
+  /* 'NAV에 있는 메뉴2번'(앤더슨 샵)에서 홍보하는 캐릭터  캐릭터 관련 아이템이 나오는 영역이다 */
+  background-image: url("/img/main/main_menu2/main_menu2_aderson_style2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

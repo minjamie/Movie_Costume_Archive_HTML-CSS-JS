@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contentsInSection {
+  width: 100%;
+}
+/* id콘텐츠 안에 섹션들은 높이가 100vh다 쓰드록 설정
+이렇게 안하면 일일이 다 설정해줘야함  */
+#contents > section {
+  height: 100vh;
+}
+#section1 {
+  /* 섹션1은 메인 영역의 메뉴 1번 앤더슨 스타일 내용 */
+  background-color: #e8d2dd;
+}
+#section2 {
+  /* 메뉴1번 해당되는 앤더슨 스타일 콘텐츠 부분 */
+  display: grid;
+  grid-template-columns: 0.7fr 1.5fr 0.7fr;
+  justify-content: center;
+}
+
+#section3 {
+  background: #e8d2de;
+  display: grid;
+  grid-template-columns: 0.243fr auto;
+  grid-template-rows: 0.5fr 1.5fr 0.4fr;
+}
+#section4 {
+  background: #e8d2de;
+  display: grid;
+  grid-template-rows: 0.3fr 1.5fr 0.3fr;
+}
+#section5 {
+  background: #e8d2de;
+  display: grid;
+  grid-template-rows: 0.2fr 1.5fr 0.2fr;
+}
+/* 폰트 사이즈 */
+
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2.5rem;
+}
+h6 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+}
+
+/* top 버튼  */
+
+#go-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border: none;
+  border-radius: 50%; /* 경계선 둥글게 */
+  padding: 1em;
+  cursor: pointer; /* 마우스를 올렸을 때 커서 모양 포인트 */
+  font-weight: bold;
+  display: inline-block;
+  opacity: 0;
+  text-decoration: none;
+  font-size: 0.75em;
+  box-shadow: 2px 2px 10px #bfbfbf; /* box모델 그림자 지게 */
+  visibility: hidden;
+}
+
+#go-to-top:hover {
+  color: #e4d732; /* 마우스를 올려 두었을 때 그리고 클릭하고 땔 때까지 링크의 색상 */
+  transform: translate(20px, 20px);
+  /* 마우스를 올렸을 때 x축으로 20px y축으로 20px 이동한다. */
+  transition: all 0.5s; /* go to top버튼에 대해 전환이 일날시 모든 효과 일어나도록  */ /* 0.5초 간격으로  */
+  padding: 20px; /* 마우스를 올렸을 때 패딩이 20px 커진다. */
+  font-size: 1rem; /* 폰트 사이즈가 커진다 */
+}
+
+#go-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}

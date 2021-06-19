@@ -1,0 +1,24 @@
+* {
+  /* 전체 태그 */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#menuNo2Wrapper {
+  padding: 0px 250px;
+  background-color: #e8d2dd;
+}
+.contentsInSection {
+  width: 100%;
+}
+
+#contents > section {
+  height: 200vh;
+}
+#section1 {
+  background-color: #e8d2dd;
+  width: 100%;
+  /* 메인 영역을 3개의 섹션으로 나누기 위한 flex 적용 */
+  display: flex;
+  flex-flow: row nowrap;
+}
