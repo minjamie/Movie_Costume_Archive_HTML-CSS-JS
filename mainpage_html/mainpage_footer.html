@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+  <footer class="item" id="footer">
+    <!-- 아이템 요소 중 가장 하단에 있는 푸터 영역을 담당한다. -->
+    <!-- footer영역, 영화 별로 모아놓은 콜렉션, 사이트에 대한 소개, 관련 조약과 정책 사항에 대한 링크가 포함 -->
+    <div style="padding: 1rem 1rem;">
+      <h2>
+        Sign up for our site and get lastest newsletter
+      </h2>
+      <div style="padding: 1rem 1rem;">
+        <div>
+          <a href="collection.html">COLLECTIONS</a>
+          <a href="about.html">ABOUT</a>
+          <a href="terms.html">TERMS</a>
+          <a href="privacypolicy.html">PRIVACY POLICY</a>
+          <p class="bookName" style="float: right;"></p>
+        </div>
+      </div>
+      <div>
+        <h6>BOOK SEARCH</h6>
+        <input id="bookName" type="text">
+        <button id="search">SEARCH</button>
+      </div>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      $("#search").click(function () {
+        $.ajax({
+          method: "GET",
+          url: "https://dapi.kakao.com/v3/search/book?target=title",
+          data: { query: $("#bookName").val() },
+          headers: { Authorization: "KakaoAK ae39af0409a9150e52d14749f10484c2" }
+        })
+          .done(function (msg) {
+            $(".bookName").append("<img src='" + msg.documents[0].thumbnail + "'/>");
+
+            $(".bookName").append("<strong>" + msg.documents[0].title + "</strong>");
+          });
+      });
+    });
+  </script>
+</body>
+
+</html>

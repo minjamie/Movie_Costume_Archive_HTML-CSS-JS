@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/header_stylesheet/mainpage_header.css">
+</head>
+
+<body>
+  <!-- 콘테이너의 첫 번째 자식요소인 헤더 영역이다. -->
+  <div class="headerUpper">
+    <!-- 페이지에 메인 로고가 위차한 헤더 상단 부분이다. -->
+    <a href="mainpage_Total.html">
+      <figure><img src="img/header/logo.png" class="logoImage" alt="main logo image"></figure>
+    </a> <!-- 메인 페이지으로 넘어갈 수 있는 링크를 걸어놓은 로고 이미지 -->
+  </div>
+
+  <div class="headerButton">
+    <!--SNS아이콘과 검색 로그인을 할 수 있는 아이콘들이 있는 헤더 하단 부분. -->
+    <!--왼쪽에는 사이트의 SNS, 오른쪽에는 검색, 로그인 기능을 이용할 수 있는 영역이다.-->
+    <span name="facebook">
+      <a href="https://www.facebook.com/accidentallywesanderson/" target="_blank">
+        <img src="img/header/facebook logo.png" class="snsImage" alt="facebook logo">
+      </a> <!-- 페이스북 링크를 걸어놓은 로고 이미지 -->
+    </span>
+    <span name="instagram">
+      <a href="https://www.instagram.com/accidentallywesanderson/" target="_blank">
+        <img src="img/header/insta logo.png" class="snsImage" alt="instagram logo">
+      </a> <!-- 인스타그램 링크를 걸어놓은 로고 이미지 -->
+    </span>
+    <span class="SearchLoginIcon" name="search">
+      <a href="#"
+        onclick="window.open('header/search/search.html', '_blank', 'width=500px,height=200px, toolbars=no, scrollbars=no'); return false;"
+        type="text/css">
+        <img src="img/header/search icon.png" class="searchIcon" alt="search icon">
+        Search
+      </a>
+      <!--검색 아이콘 이미지와 링크 문구로, 클릭시 검색을 할 수 있는 팝업창이 새로 생성된다. -->
+    </span>
+    <span class="SearchLoginIcon" name="login">
+      <a href="#"
+        onclick="window.open('header/login/login.html', '_blank', 'width=600px,height=500px, toolbars=no, scrollbars=no'); return false;"
+        type="text/css">
+        <img src="img/header/login icon.png" class="loginIcon" alt="login icon">
+        Login
+      </a>
+    </span>
+    <!--로그인 아이콘 이미지와 링크 문구로, 클릭시 로그인을 할 수 있는 팝업창이 새로 생긴다. -->
+    </span>
+  </div>
+</body>
+
+</html>

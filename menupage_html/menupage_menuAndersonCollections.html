@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Anderson Style</title>
+  <link rel="stylesheet" href="../css/menupage_menu1_anderson_style_stylesheet/menupage_menu1_anderson_style.css">
+</head>
+
+<body>
+  <nav name="nav">
+    <!-- 컨테이너 밖에 있는 가장 상단에 고정된 네브 영역을 담당한다. -->
+    <div name="menu space" id="nav_menu">
+      <!-- 메뉴1. 웨스앤더슨 스타일, 메뉴2. 앤더슨 샵, 메뉴 3.앤더슨 스타일 공유하기, 메뉴 4. 앤더슨 스타일 찾기, 메뉴 5. 엔더슨의 콜렉션들이다. -->
+      <!-- 추가하고 싶은 JS은 메뉴바가 처음 화면에는 없었다가 스크롤을 내리는 순간 메뉴바가 밑으로 내려와서 생기는 효과를 만들고싶다. -->
+      <span name="menu number one">
+        <a href="menu1_Anderson_style.html">
+          <p class="menu_text">Anderson Style's Fashion</p>
+        </a>
+      </span>
+      <span name="menu number two">
+        <a href="menu2_Anderson_Shop.html">
+          <p class="menu_text">Anderson Shop</p>
+        </a>
+      </span>
+      <span name="menu number three">
+        <a href="menu3_Share_Anderderon_style.html">
+          <p class="menu_text">Share Anderderon style</p>
+        </a>
+      </span>
+      <span name="menu number four">
+        <a href="menu4_Find_Anderderon_style.html">
+          <p class="menu_text">Find Anderderon style</p>
+        </a>
+      </span>
+      <span name="menu number five">
+        <a href="menu5_Collecions">
+          <p class="menu_text">Anderson's Collections</p>
+        </a>
+      </span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- 가장 큰 콘테이너 영역이다. -->
+    <header class="item" name="header">
+      <!-- 콘테이너 안에 있는 헤더 메인 푸터 요소들이다.-->
+      <div id="header logo space" name="header upper">
+        <!-- 헤더 상단 부분. -->
+        <a href="mainpage_My_iife_as_a_anderson_film.html">
+          <figure><img src="../image/header/logo.png" id="logo_image" alt="logo image"></figure>
+        </a> <!-- 메인 페이지으로 넘어갈 수 있는 링크를 걸어놓은 로고 이미지 -->
+      </div>
+      <div id="sns_search_login space" name="header button">
+        <!--헤더 하단 부분. -->
+        <!--왼쪽에는 사이트의 SNS, 오른쪽에는 검색, 로그인 기능을 이용할 수 있는 영역이다.  -->
+        <span name="facebook">
+          <a href="https://www.facebook.com/accidentallywesanderson/" target="_blank">
+            <figure><img src="../image/header/facebook logo.png" class="sns" alt="facebook logo"></figure>
+          </a> <!-- 페이스북 링크를 걸어놓은 로고 이미지 -->
+        </span>
+        <span name="instgram">
+          <a href="https://www.instagram.com/accidentallywesanderson/" target="_blank">
+            <figure><img src="../image/header/insta logo.png" class="sns" alt="facebook logo"></figure>
+          </a> <!-- 인스타그램 링크를 걸어놓은 로고 이미지 -->
+        </span>
+        <div name="search">
+          <a href="#"
+            onclick="window.open('search.html', '_blank', 'width=500px,height=200px, toolbars=no, scrollbars=no'); return false;"
+            type="text/css">
+            <figure>
+              <p style="font-size:1rem; float: right;">Search</p>
+              <img src="../image/header/search icon.png" id="search" alt="search icon">
+            </figure>
+          </a>
+          <!--검색 아이콘 이미지와 링크 문구로, 클릭시 검색을 할 수 있는 팝업창이 새로 생성된다. -->
+        </div>
+        <span name="login">
+          <a href="#"
+            onclick="window.open('login/login.html', '_blank', 'width=500px,height=500px,toolbars=no,scrollbars=no'); return false;"
+            type="text/css">
+            <p style="font-size:1rem; float: right;">Login</p>
+            <figure><img src="../image/header/login icon.png" id="login" alt="login icon"></figure>
+          </a>
+          <!--로그인 아이콘 이미지와 링크 문구로, 클릭시 로그인을 할 수 있는 팝업창이 새로 생긴다. -->
+        </span>
+      </div>
+    </header>
+
+    <main class="item">
+      <!-- 아이템 요소 중 가장 많은 내용을 담은 메인 영역을 담당한다. -->
+      <section class="menu1_section">
+        <!--메뉴1번을 세개의 섹션으로 나눈다. -->
+        <div class="menu1_section_top">
+          <!-- 첫번 째 섹션의 상단에 위치한 감독의 스타일 사진과 소개 문구가 써져있다. -->
+          <div class="menu1_section_top_left_image" type="slider">
+            <!-- 클릭 된 사진이 확대되어서 보인다. 후에 JS기능을 통해 슬라이더 기능을 추가하려한다. -->
+            <div>
+              <img src="../image/menu1_image/Anderson_styles/anderson picture.jpg" alt="anderson picture"
+                id="menu1_section_top_slider_main_image">
+            </div><!-- 가장 크게 나온 감독의 스타일 사진이다. -->
+          </div>
+          <div class="menu1_section_top_left_image">
+            <div class="menu1_section_top_slider_serve_image">
+              <!-- 슬라이더 형태로 감독의 서브 사진들이 메인 사진 바로 밑에 일정한 간격으로 나열되어있다. -->
+              <div>
+                <img src="../image/menu1_image/Anderson_styles/anderson golden fashion1.jpg" alt=""
+                  style="width: 125px; height: 150px;">
+              </div>
+              <div>
+                <img src="../image/menu1_image/Anderson_styles/anderson golden fashion2.jpg" alt=""
+                  style="width: 125px; height: 150px; padding-left: 5px;">
+              </div>
+              <div>
+                <img src="../image/menu1_image/Anderson_styles/anderson golden fashion3.jpg" alt=""
+                  style="width: 125px; height: 150px;">
+              </div>
+              <div>
+                <img src="../image/menu1_image/Anderson_styles/anderson golden fashion4.jpg" alt=""
+                  style="width: 125px; height: 150px;">
+              </div>
+            </div>
+            <div class="menu1_section_top_left_image">
+              <div class="menu1_section_top_slider_serve_image">
+                <!-- 슬라이더 형태로 감독의 서브 사진들이 두번 째 줄에 일정한 간격으로 나열되어있다. -->
+                <div>
+                  <img src="../image/menu1_image/Anderson_styles/anderson velvet fashion1.jpg" alt=""
+                    style="width: 125px; height: 150px;">
+                </div>
+                <div>
+                  <img src="../image/menu1_image/Anderson_styles/anderson velvet fashion2.jpg" alt=""
+                    style="width: 125px; height: 150px;">
+                </div>
+                <div>
+                  <img src="../image/menu1_image/Anderson_styles/anderson velvet fashion3.jpg" alt=""
+                    style="width: 125px; height: 150px;">
+                </div>
+                <div>
+                  <img src="../image/menu1_image/Anderson_styles/anderson velvet fashion4.jpg" alt=""
+                    style="width: 125px; height: 150px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu1_section_top">
+          <div class="menu1_section_top_right_text">
+            <!-- 메뉴 1번 섹션에 상단에 문구가 나와있는 영역으로 엔더슨 스타일이 무엇인지, 웨스 앤더슨이 누구인지 간략한 소개글과 그의 공식 홈페이지가 나와있다. -->
+            <h1 class="menu1_section_top_right_text_title">
+              ANDESON STYLLE,
+              WHAT'S THAT?
+            </h1>
+            <h2 id="menu1_section_top_right_text_definition">
+              Anderson-style,<br>
+              A primal, exalted fashion fantasy created by Wes Anderson.
+            </h2><br><!-- 자신만의 독특한 미학을 관객들에게 관철시키는 영화 감독이자 작가이다. -->
+            <h1 class="menu1_section_top_right_text_title">
+              THEN WHO IS WES ANDERSON?
+            </h1>
+            <h2 id="menu1_section_top_right_text_definition">
+              He is a film director and writer<br>
+              who inspires audiences with his own unique aesthetics.
+            </h2><!-- 웨스앤더슨은 자신만의 독특한 미학을 관객들에게 관철시켜 그들에게 많은 영감을 남겨주는 영화 감독이자 작가이다. -->
+          </div>
+          <div class="menu1_section_top_right_text">
+            <!-- 웨스 앤더슨이 옷에 대한 가치관과 그의 공식 사이트에 방문할 수 있는 버튼이 포함되어있다. -->
+            <h2 class="menu1_section_top_right_text_explain">
+              Anderson says,<br>
+              "The clothes are the person themselves.<br> clothes reveal our inner self."
+            </h2><!--  앤더슨 스타일 정의, 그가 창조한 원색적이며 격양된 패션 판타지로 “옷이 곧 그 사람이다. 나의 삶도 옷이 나의 내면을 드러내고 있다.” -->
+            <P>
+              DO YOU WANNA KNOW MORE ABOUT ANDERSON?<br>
+              VISIT HIS OFFICIAL SITE!
+            </P>
+            <div style="padding-left: 30px;">
+              <a href="http://wesanderson.tv/"><img src="../image/menu1_image/website_buttton.png"
+                  alt="website visit button" id="menu1_website_button"></a>
+            </div><!-- 그의 공식 사이트 링크를 걸어놓은 웹사이트 버튼 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="menu1_section">
+        <div class="menu1_section_middle">
+          <h1 class="menu1_section_middle_top_text_title" style="text-align: center;">
+            FREQUENTLY ASKED QUESTIONS
+          </h1><!-- 자주 묻는 질문들-->
+          <h2 id="menu1_section_middle_text_title">
+            <details>
+              <summary class="menu1_section_middle_text_question">Q. What does fashion have to do with director Wes
+                Anderson?</summary> <!-- 웨스 앤더슨 감독과 패션이 무슨 관련이 있나요? -->
+              <span class="menu1_section_middle_text_answer">
+                A. 웨스 앤더슨 감독은 사막의 촬영장에서도 수트를 챙겨 입을 정도로 패션에 대한 태도가 대단합니다.<br>
+                특히 스웨이드 소재의 브라운 컬러 수트, 벨벳 소재의 퍼플 컬러 수트는 그의 시그니처 수트로 자리매김해<br>
+                각양각색의 수트를 입고 촬영장, 파티장, 레드 카펫을 누비는 모습을 쉽게 발견할 수 있습니다.<br>
+                때론 핏하게, 때론 후줄근하게 클랙식하면서도 레트로한 수트들을 주로 차려 입는걸 볼 수 있습니다.<br>
+                이렇게 그는 본인만의 개성 넘치는 스타일을 그의 영화 속 캐릭터 캐릭터 마다 모두 대입하여 캐릭터를 창조합니다 .<br>
+                이러한 스타일리쉬한 감각의 웨스 앤더슨은 영화뿐만 아니라 패션 업계에서도 이미 유명하다고 합니다.<br>
+                구찌, 프라다, 미우미우 등 세계적인 <a href="menu6_Anderson X Collabo.html">패션 브랜드가 그에게 영감</a>을 받아 다양한 쇼를 선보엿습니다.<br>
+                뿐만 아니라 다양한 패션 브랜드들과 찍은 <a href="menu6_Anderson X Collabo.html">패션필름</a>에서도 어김없이 그의 정수를 보여왔습니다.
+              </span>
+            </details>
+            <details>
+              <summary class="menu1_section_middle_text_question">Q. Who runs this site? </summary>
+              <!-- 이 사이트는 누가 운영하는 건가요? -->
+              <span class="menu1_section_middle_text_answer">
+                A.이 사이트는 참여형 사이트로 많은 이용자들의 참여로 지속전인 업데이트가 되고 있습니다.<br>
+                저희 팀은 각 이용자들이 보내주는 사진과 정보를 바탕으로 이를 정리하고 아카이브하는 작업에 집중하고 있습니다.<br>
+                향후 여러분이 모은 자료를 가지고 책을 집필 할 예정이니 많은 참여 부탁드립니다.
+              </span>
+            </details>
+            <details>
+              <summary class="menu1_section_middle_text_question">Q.What does the shop sell? </summary>
+              <!-- 상점에서는 무엇을 구매를 할 수 있나요? -->
+              <span class="menu1_section_middle_text_answer">
+                A. 상점에는 이용자들이 요청한 영화 속 패션 아이템 상품을 여러분께 소개해드립니다.<br>
+                이곳에서 웨스 앤더슨의 영화 속 인물들이 입은 다양한 의상들을 구매하실 수 있습니다.<br>
+                모든 상품들은 앤더슨 감독의 작품의 캐릭터가 입은 의상을 기준으로 리스트업되고 있습니다.<br>
+                향후 그의 영화 개봉작 <프렌치 키스>이 개봉되면 추가적으로 상품이 업로드 될 예정입니다.
+              </span>
+            </details>
+            <details>
+              <summary class="menu1_section_middle_text_question">Q. What is the purpose of this site? </summary>
+              <!-- Q.이 사이트의 목적이 뭔가요? -->
+              <span class="menu1_section_middle_text_answer">A. 저희는 여러분의 삶을 마치 앤더슨 영화의 판타지 처럼 만들어드리는데 최선을 다하고 있습니다!<br>
+                저희의 상품들이 여러분의 일상을 모험적이고 신비로운 일상으로 변화시키길 바랍니다.<br>
+                저희는 저희가 올린 상품 외에도 이용자들이 입고자하는 캐릭터의 패션 아이템을 요청한다면<br>
+                관련된 아이템을 찾아 여러분께 선보이는 <a href="menu4_Find_Anderderon_style.html">관련된 아이템을 찾아 여러분께 선보이는 서비스</a> 또한 시행하고
+                있습니다. 많은 참여부탁드립니다.
+              </span>
+            </details>
+          </h2>
+        </div>
+      </section>
+    </main>
+
+    <footer class="item" name="footer">
+      <!-- 아이템 요소 중 가장 하단에 있는 푸터 영역을 담당한다. -->
+      <!-- footer영역, 영화 별로 모아놓은 콜렉션, 사이트에 대한 소개, 관련 조약과 정책 사항에 대한 링크가 포함 -->
+      <div>
+        <h2>
+          Sign up for our site and get lastest newsletter
+        </h2>
+      </div>
+      <div>
+        <a href="collection.html">COLLECTIONS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="terms.html">TERMS</a>
+        <a href="privacypolicy.html">PRIVACY POLICY</a>
+      </div>
+      </article>
+    </footer>
+  </div>
+</body>
+
+</html>
