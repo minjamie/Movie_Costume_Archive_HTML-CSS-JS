@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>mainPage</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><!-- 제이쿼리 라이브러리 로드 -->
+  <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script><!-- 속도를 등속으로 쓰기 위한 라이브러리 -->
+
+  <link rel="stylesheet" href="css/nav_stylesheet/mainpage_nav.css">
+  <!-- mainPage에 네브 영역에 해당되는 mainpage_nav.CSS로드 -->
+  <link rel="stylesheet" href="css/mainpage_stylesheet/mainpage_mainTotal.css">
+  <!-- mainPage 전체에 해당되는 CSS로드 -->
+  <link rel="stylesheet" href="css/mainpage_stylesheet/mainpage_menuAndersonStyle.css">
+  <!-- mainPage 전체 중 menuNo1_AndersonStyle 해당되는 CSS로드 -->
+  <link rel="stylesheet" href="css/mainpage_stylesheet/mainpage_menuAndersonShop.css">
+  <!-- mainPage 전체 중 menuNo2_AndersonShop 해당되는 CSS로드 -->
+  <link rel="stylesheet" href="css/mainpage_stylesheet/mainpage_menuShareAndersonStyle.css">
+  <!-- mainPage 전체 중 menuNo3_ShareAndersonStyle 해당되는 CSS로드 -->
+  <link rel="stylesheet" href="css/mainpage_stylesheet/mainpage_menuFindAndersonStyle.css">
+  <!-- mainPage 전체 중 menuNo4_FindAndersonStyle 해당되는 CSS로드 -->
+
+  <link rel="stylesheet" href="css/footer_stylesheet/mainpage_footer.css">
+  <!-- mainPage에 푸터 영역에 해당되는 mainpage_footer.CSS로드 -->
+
+
+
+
+  <script type="text/javascript" src="js/mainpage_main/mainpage_nav.js"></script>
+  <!-- NAV.HTML 로드 -->
+  <script type="text/javascript" src="js/mainpage_main/mainpage_header.js"></script>
+  <!-- HEADER.HTML 로드 -->
+  <script type="text/javascript" src="js/mainpage_main/mainpage_menuAndersonStyle.js"></script>
+  <!--menuAndersonStyle.HTML 로드 -->
+  <script type="text/javascript" src="js/mainpage_main/mainpage_menuAndersonShop.js"></script>
+  <!--menuAndersonShop.HTML 로드 -->
+  <script type="text/javascript" src="js/mainpage_main/mainpage_menuShareAndersonStyle.js"></script>
+  <!-- menuShareAndersonStyle.HTML 로드 -->
+  <script type="text/javascript" src="js/mainpage_main/mainpage_menuFindAndersonStyle.js"></script>
+  <!-- menuFindAndersonStyle.HTML 로드 -->
+  <script type="text/javascript" src="js/mainpage_main/mainpage_menuAndersonCollections.js"></script>
+  <!-- menuFindAndersonStyle.HTML 로드 -->
+  <script type="text/javascript" src="js/mainpage_main/mainpage_footer.js"></script>
+  <!-- FOOTER.HTML 로드 -->
+</head>
+
+<body>
+  <nav id="top_menu">
+    <!-- NAV영역 -->
+  </nav>
+
+  <div class="container">
+    <!--NAV의 5개 메뉴가 포함된 CONTAINER 영역 -->
+    <main id="contents">
+      <!-- 메인영역에는 네브영역에 명시된 메뉴명 1번부터 5번까지 내용들 포함-->
+
+      <section id="section1">
+        <div class="contentsInSection menuNo1">
+          <!-- section1 안에 포함된 앤더슨 스타일 영역 -->
+          <header class="menuNo1AndersonStyle" id="menuNo1_header">
+            <!-- section1 안에 포함된 header 영역 -->
+          </header>
+          <div class="menuNo1AndersonStyle" id="menuNo1_AndersonStyle">
+            <!-- 앤더슨 스타일의 content 영역 -->
+          </div>
+        </div>
+      </section>
+
+      <section id="section2">
+        <!-- section2 안에 포함된 앤더슨 샵 영역 -->
+        <!--두 번째 섹션태그로 메뉴2번에 내용 중, '앤더슨 상점을 홍보하는 아이템들에 대한 이미지'가 담긴 영역이다.  -->
+      </section>
+
+      <section id="section3">
+        <!-- section3 안에 포함된 앤더슨 스타일 공유하기(SNS) 영역 -->
+        <!--세 번째 섹션태그로 메뉴3번, '앤더슨 스타일의 SNS 사진들을 공유하는 커뮤니티를 소개'하는 영역이다. -->
+      </section>
+
+      <section id="section4">
+        <!-- section4 안에 포함된 앤더슨 스타일 찾기 게시판 영역 -->
+      </section>
+
+      <section id="section5">
+        <!-- section5 안에 포함된 앤더슨 콜렉션 영역 -->
+      </section>
+      <a href="#" id="go-to-top"> ▲TOP</a>
+      <!-- 상단으로 올라가는 top버튼 -->
+
+    </main>
+  </div>
+  <footer id="button_menu">
+    <!-- FOOTER영역 -->
+  </footer>
+
+  <script type="text/javascript" src="js/scroll_menu&section.js"></script><!-- 메뉴에 따라 스크롤이 내려가는 것을 구현한 JS -->
+  <script type="text/javascript" src="js/scroll_menu_hide.js"></script><!-- 스크롤에 따라 nav바가 사라지고 생기는 것을 구현한 JS -->
+  <script src="js/scroll_TopBotton.js"></script><!-- top버튼 -->
+
+</body>
+
+</html>
